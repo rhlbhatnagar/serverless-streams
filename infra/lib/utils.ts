@@ -23,4 +23,3 @@ export function getEntityName(scope: Construct, entityName: string): string {
  * Project prefix for consistent naming across all resources.
  */
 export const PROJECT_PREFIX = "sls-streams";
-
