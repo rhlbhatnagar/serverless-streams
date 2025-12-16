@@ -217,6 +217,7 @@ See individual READMEs:
 - [ ] **Compression**: Gzip/Zstd for large messages
 - [ ] **Retention Policies**: Configurable message TTL
 - [ ] **Monitoring**: CloudWatch dashboards and alarms
+- [ ] **Testing + Benchmarking**: Thorough test suite and benchmarks for throughput and race conditions
 
 ## Contributing
 
