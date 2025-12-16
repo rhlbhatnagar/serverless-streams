@@ -2,6 +2,8 @@
 
 A serverless message streaming platform built on AWS, inspired by Kafka but with true serverless architecture (scale-to-zero, pay-per-use).
 
+![Architecture Diagram](assets/architecture.png)
+
 ## Overview
 
 Serverless Streams provides a Kafka-like streaming API using:
@@ -202,13 +204,13 @@ See individual READMEs:
 
 - **No partitioning**: Each topic is a single stream (can add later)
 - **S3 latency**: ~50-100ms per operation (vs Kafka's ~5ms)
-- **No consumer groups**: Each consumer tracks offsets manually (TODO)
 - **No batching**: Individual messages written to S3 (can optimize later)
 
 ## Roadmap
 
 - [ ] **Client SDKs**: Python, TypeScript, Go
 - [ ] **Consumer Groups**: Automatic offset tracking
+- [ ] **Branching**: Branching in a topic similiar to what NEON does
 - [ ] **Message Batching**: Batch writes for better S3 efficiency
 - [ ] **Partitioning**: Multiple partitions per topic
 - [ ] **Streaming**: WebSocket/SSE for real-time consumption
